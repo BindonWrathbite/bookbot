@@ -9,7 +9,7 @@ def words_to_list():
     return words
 
 
-def chars_to_dict():
+def count_chars():
     abc_dict = {
         'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0,
         'f': 0, 'g': 0, 'h': 0, 'i': 0, 'j': 0,
@@ -40,7 +40,8 @@ def count_words():
 def main():
     print('--- Begin report of books/frankenstein.txt ---')
     print(f'{count_words()} words found in the document')
-    letter_dict = chars_to_dict()
+    letter_dict = count_chars()
+    
     for letter in letter_dict:
         print(f"The {letter} character was found {letter_dict[letter]} times")
 
